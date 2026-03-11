@@ -1,0 +1,13 @@
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return '''
+    <div style="text-align: center;">
+    <p>«Ах! злые языки страшнее пистолета.»</p>
+    <p>- Александр Грибоедов</p>
+    <p>«Горе от ума»</p>
+    </div>
+    '''
+if __name__ == "__main__":
+    app.run(debug=True)
